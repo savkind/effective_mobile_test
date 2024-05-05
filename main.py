@@ -21,11 +21,11 @@ while True:
         match command:
             case '1':
                 balance = read_balance(data)
-                print(balance)
+                print(data)
+                print(f"Balance - {balance}")
             case '2':
                 data = add_record(data)
             case '3':
-                print(data)
                 print(Messages.msg_input_id)
                 id = int(input())
                 data = edit_record(id, data)
